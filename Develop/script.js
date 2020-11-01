@@ -20,11 +20,10 @@ document.querySelector("#generate").addEventListener("click", writePassword);
     confirmUpperCase();
     confirmLowerCase();
     confirmSpecialCharacters();
+    var newPassword = generatePassword(length);
     var passwordText = document.querySelector("#password");
-    passwordText.value = length; 
-    console.log(selectedCharacter)
-    generatePassword (length);
-   selectedCharacter = "";
+    passwordText.value = newPassword; 
+    selectedCharacter = "";
   }
  
   // Length of password
@@ -62,12 +61,12 @@ document.querySelector("#generate").addEventListener("click", writePassword);
       selectedCharacter += randomSymbol
     }
   }
-  
+ 
 
   function generatePassword(length) {
-    var randomPassword = writePassword()
-  for(var i = 0; i <= length; i++) {
-   randomPassword = randomPassword + selectedCharacter(Math.floor(Math.random() * length));
+    var randomPassword = ""
+  for(var i = 0; i < length; i++) {
+   randomPassword = randomPassword + selectedCharacter.charAt(Math.floor(Math.random() * selectedCharacter.length));
    }
    return randomPassword;
   }
