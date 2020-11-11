@@ -12,7 +12,7 @@ When first loading the site, you should be greeted with the following generator:
 ![Password Generator](./password.generator.png)
 
 ## Live GitHub Pages
-If you'd like to see the site, click [here](https://veroli-mart.github.io/random-password-generator)
+If you'd like to see the site, click [here](https://veroli-mart.github.io/random-password-generator/Develop)
 
 ## Respository
 If you'd like to see the repository itself click [here](https://github.com/veroli-mart/random-password-generator.git)
